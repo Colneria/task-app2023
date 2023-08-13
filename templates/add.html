@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<main>
+        <div class="task-container">
+            <form action="/add" method="POST" class="form">
+                <div class="input-item">
+                    <label for="task">タスク入力フォーム</label>
+                    <input type="text" id="task" name="task">
+                </div>
+                <input type="submit" value="タスクを追加する" class="btn btn-primary">
+            </form>
+        </div>
+</main>
+{% endblock %}

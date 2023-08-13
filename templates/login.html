@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<main>
+    <div class="background">
+        <div class="container">
+            <form action="/login" method="post" class="form">
+                
+                <div class="input-item">
+                    <label for="name">ユーザー名</label>
+                    <input type="text" id="name" name="name">
+                </div>
+
+                <div class="input-item">
+                    <label for="password">パスワード</label>
+                    <input type="password" id="password" name="password">
+                </div>
+
+                <input type="submit" class="btn btn-primary" value="ログイン">
+
+            </form>
+        </div>
+    </div>
+</main>
+
+{% endblock %}

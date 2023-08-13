@@ -1,0 +1,176 @@
+/* ベーススタイル */
+body {
+    font-family: 'Arial', YuGothic, 'Yu Gothic', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'メイリオ', Meiryo, 'ＭＳ ゴシック', sans-serif;
+    color: #333333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: 36px;
+    padding: 1px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* ヘッダー */
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    padding: 0 10%;
+    background-color: #409393;
+}
+
+.app-title{
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 80px;
+}
+
+.member-menu{
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+}
+
+.menu-link{
+    color: #ffffff;
+}
+
+/* フォーム */
+
+.form{
+    padding: 45px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 6px #cccccc;
+}
+
+.form .btn{
+    margin: 0;
+    margin-top: 60px;
+}
+
+.input-item{
+    margin-bottom: 30px;
+}
+
+.input-item label{
+    display: block;
+    margin-bottom: 4px;
+}
+
+/* ボタンスタイル */
+
+.btn{
+    display: block;
+    width: 300px;
+    height: 48px;
+    margin: 30px auto;
+    border-radius: 4px;
+    line-height: 48px;
+    text-align: center;
+    border: none;
+    transition: opacity 0.3s ease;
+}
+
+.btn:hover{
+    opacity: 0.7;
+}
+
+.btn-primary{
+    background-color: #409393;
+    color: #ffffff;
+}
+
+.btn-secondary{
+    border: 1px solid #409393;
+    background-color: #ffffff;
+    color: #409393;
+}
+
+/* index.html */
+
+.background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 80px);
+    background: url("../img/background.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.task-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 80px);
+}
+
+/* list.html */
+
+.page-head{
+    margin-top: 120px;
+    margin-bottom: 60px;
+    color: #409393;
+    font-size: 24px;
+    text-align: center;
+}
+
+.list-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+
+.card-wrap{
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.card{
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 6px #cccccc;
+}
+
+.task-title{
+    margin-bottom: 15px;
+    color: #333333;
+    line-height: 1.5;
+}
+
+.icon-wrap{
+    display: flex;
+    column-gap: 12px;
+    justify-content: end;
+}
+
+.circle{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #409393;
+    text-align: center;
+    line-height: 32px;
+}
+
+.fa-pen,.fa-trash{
+    color: #ffffff;
+    font-size: 14px;
+}
+

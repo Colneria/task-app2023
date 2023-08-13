@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<main>
+        <div class="task-container">
+            <form action="/edit" method="POST" class="form">
+                <div class="input-item">
+                    <input type="hidden" name="task_id" value="{{task_id}}">
+                    <label for="task">タスク編集フォーム</label>
+                    <input type="text" id="task" name="task" value="{{task}}">
+                </div>
+                <input type="submit" value="タスクを編集する" class="btn btn-primary">
+            </form>
+        </div>
+</main>
+{% endblock %}

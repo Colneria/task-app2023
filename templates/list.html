@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <main>
+        <h2 class="page-head">タスク一覧</h2>
+        <div class="list-container">
+
+            <div class="card-wrap">
+                
+                {% for task in task_list %}
+                <div class="card">
+                    <p class="task-title">{{task["task"]}}</p>
+                    <div class="icon-wrap">
+                        <a href="/edit/{{task['id']}}" class="circle"><i class="fa-solid fa-pen"></i></a>
+                        <a href="/delete/{{task['id']}}" class="circle"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+
+                {% endfor %}
+
+
+            </div>
+
+        </div>
+    </main>
+
+{% endblock %}
